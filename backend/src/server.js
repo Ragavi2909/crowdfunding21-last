@@ -1248,14 +1248,14 @@ app.post('/api/contact', (req, res) => {
 app.use('/uploads', express.static(UPLOADS_DIR));
 
 // Serve frontend statically so visiting http://localhost:4000/ loads the site
-if (fs.existsSync(FRONTEND_DIR)) {
-    app.use(express.static(FRONTEND_DIR));
-    app.get('/', (req, res) => {
-        res.sendFile(path.join(FRONTEND_DIR, 'index.html'));
-    });
-}
+// if (fs.existsSync(FRONTEND_DIR)) {
+//     //app.use(express.static(FRONTEND_DIR));
+//     app.get('/', (req, res) => {
+//         res.sendFile(path.join(FRONTEND_DIR, 'index.html'));
+//     });
+// }
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`API listening on http://localhost:${PORT}`);
+    console.log(`Server running → https://crowdfunding21-last-8.onrender.com`);
 });

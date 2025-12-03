@@ -1,5 +1,5 @@
 // API Connection Utilities
-const API_URL = 'http://localhost:4000/api';
+const API_URL = "https://crowdfunding21-last-9.onrender.com";
 
 // Generic fetch wrapper with error handling
 async function fetchAPI(endpoint, options = {}) {
