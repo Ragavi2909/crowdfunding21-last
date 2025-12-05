@@ -427,7 +427,8 @@
             return `
                 <div class="campaign-card" onclick="openModal(${campaign.id})">
                     <div class="campaign-image">
-                        <img src="${campaign.image}" alt="${campaign.title}">
+                        <img src="https://crowdfunding21-last-9.onrender.com/${campaign.image}" alt="${campaign.title}">
+
                         <div class="campaign-badge">${campaign.badge}</div>
                     </div>
                     <div class="campaign-content">
@@ -682,7 +683,8 @@
                     const storyCard = document.createElement('div');
                     storyCard.className = 'story-card';
                     storyCard.innerHTML = `
-                        <img src="${campaign.image}" alt="${campaign.title}">
+                        <img src="https://crowdfunding21-last-9.onrender.com/${campaign.image}" alt="${campaign.title}">
+
                         <div class="story-content">
                             <h3>${campaign.title}</h3>
                             <p class="story-stats">₹${formattedRaised} raised • ${campaign.backers}+ backers • ${percentFunded}% funded</p>
@@ -750,5 +752,7 @@
             });
         });
     </script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
